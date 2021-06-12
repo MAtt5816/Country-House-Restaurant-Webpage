@@ -116,7 +116,7 @@ nav>ul li ul {
 nav>ul li:hover ul {
   position: absolute;
   margin-top: 2px;
-  z-index: 2;
+  z-index: 3;
   background: #BD860F;
   padding: 0;
   display: block;
