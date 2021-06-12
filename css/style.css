@@ -193,7 +193,7 @@ footer .contact {
   grid-area: contact;
 }
 
-#links a {
+footer a {
   text-decoration: none;
   color: #E3A112;
 }
