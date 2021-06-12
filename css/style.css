@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato&family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
   background-color: #FDCB60;
@@ -6,7 +7,7 @@ body {
   box-sizing: border-box;
 }
 
-body, header, footer {
+body, header {
   display: flex;
   flex-direction: column;
 }
@@ -165,4 +166,55 @@ article {
 article p {
   font-family: 'Lato', sans-serif;
   text-align: center;
+}
+
+footer {
+  color: #E3A112;
+  text-align: left;
+  background-color: #3D2B05;
+  font-weight: lighter;
+  display: grid;
+  grid-template-areas:
+      '. links contact .'
+      ' . copy copy .';
+  grid-gap: minmax(0, 1fr);
+  justify-content: space-around;
+  align-items: normal;
+  align-content: center;
+  padding-top: 15px;
+  line-height: 20px;
+}
+
+#links {
+  grid-area: links;
+}
+
+footer .contact {
+  grid-area: contact;
+}
+
+#links a {
+  text-decoration: none;
+  color: #E3A112;
+}
+
+#links, footer .contact {
+  flex: auto;
+}
+
+footer span {
+  margin: 15px auto;
+  text-align: center;
+  grid-area: copy;
+}
+
+hr {
+  border-color: #E3A112;
+}
+
+.material-icons {
+  margin: 0;
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 20px;
 }
