@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato&family=MedievalSharp&display=swap');
+
 body {
   background-color: #FDCB60;
   margin: 0;
@@ -13,6 +15,21 @@ h1, h2, h3, h4, #welcome {
   text-align: center;
 }
 
+header h1 {
+  color: #FDB515;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 600%;
+  margin-bottom: 0;
+  text-shadow: 0px 0px 5px black;
+}
+
+header h2 {
+  color: #FDB515;
+  font-family: 'Courgette', cursive;
+  text-shadow: 0px 0px 10px black;
+  font-size: 200%;
+}
+
 #banner {
   position: relative;
   display: inline-block;
@@ -26,9 +43,10 @@ h1, h2, h3, h4, #welcome {
 
 #banner span {
   position: absolute;
-  top: 35%; left: 0; right: 0;
+  top: 50%; left: 0; right: 0;
+  transform: translate(0 ,-50%);
   z-index: 2;
-  text-shadow: 0px 0px 20px white;
+
 }
 
 p {
@@ -106,14 +124,6 @@ nav>ul li:hover ul {
   border-radius: 5px;
 }
 
-header h1 {
-  color: #FDB515;
-}
-
-header h2 {
-  color: #C98F10;
-}
-
 article h3 {
   margin-top: 0;
 }
@@ -143,9 +153,16 @@ article {
   padding: 0 10px;
 }
 
-main section {
+#welcome {
   margin: 20px auto;
   color: #3D2B05;
   font-weight: bold;
   font-style: italic;
+  font-family: 'Courgette', cursive;
+  font-size: 400%;
+}
+
+article p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
