@@ -126,15 +126,15 @@ nav>ul li:hover ul {
   border-radius: 5px;
 }
 
-article h3 {
+article.main h3 {
   margin-top: 0;
 }
 
-article h2 {
+article.main h2 {
   margin-bottom: 0;
 }
 
-article h2, article h3 {
+article.main h2, article.main h3 {
   color: #3D2B05;
 }
 
@@ -146,7 +146,7 @@ main {
   align-content: center;
 }
 
-article {
+article.main {
   margin-top: 20px;
   border: 1px solid #3D2B05;
   box-shadow: 5px 5px 10px #BD860F;
@@ -164,7 +164,7 @@ article {
   font-size: 400%;
 }
 
-article p {
+article.main p {
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
