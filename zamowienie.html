@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swojska Chata | najlepsze obiady domowe!</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/menu.css" type="text/css">
   </head>
   <body>
     <header>
@@ -40,19 +41,163 @@
             <legend>Menu</legend>
             <fieldset>
               <legend>Dania główne</legend>
-
+              <table class="order">
+                <tr><td><input type="checkbox" name="tradycyjny" id="tradycyjny"></td>
+                  <td class="dish_name"><label for="tradycyjny">Kotlet schabowy tradycyjny</label></td>
+                  <td class="price"><label for="tradycyjny">9 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="zapiekany" id="zapiekany"></td>
+                  <td class="dish_name"><label for="zapiekany">Kotlet schabowy zapiekany serem i pieczarką</label></td>
+                  <td class="price"><label for="zapiekany">11 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="piers" id="piers"></td>
+                  <td class="dish_name"><label for="piers">Pierś z kurczaka w panierce</label></td>
+                  <td class="price"><label for="piers">9 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="mielony" id="mielony"></td>
+                  <td class="dish_name"><label for="mielony">Kotlet mielony</label></td>
+                  <td class="price"><label for="mielony">9 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="zeberka" id="zeberka"></td>
+                  <td class="dish_name"><label for="zeberka">Żeberka wieprzowe</label></td>
+                  <td class="price"><label for="zeberka">13 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="bitka" id="bitka"></td>
+                  <td class="dish_name"><label for="bitka">Bitka wołowa</label></td>
+                  <td class="price"><label for="bitka">12 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="golabek" id="golabek"></td>
+                  <td class="dish_name"><label for="golabek">Gołąbek</label></td>
+                  <td class="price"><label for="golabek">11 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="udko" id="udko"></td>
+                  <td class="dish_name"><label for="udko">Udko pieczone</label></td>
+                  <td class="price"><label for="udko">9 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="devolaille" id="devolaille"></td>
+                  <td class="dish_name"><label for="devolaille">Kotlet de’volaille z serem i masłem</label></td>
+                  <td class="price"><label for="devolaille">11 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="gulasz" id="gulasz"></td>
+                  <td class="dish_name"><label for="gulasz">Gulasz wieprzowy warzywami</label></td>
+                  <td class="price"><label for="gulasz">11 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="wegierski" id="wegierski"></td>
+                  <td class="dish_name"><label for="wegierski">Placek po węgiersku</label></td>
+                  <td class="price"><label for="wegierski">20 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="filet" id="filet"></td>
+                  <td class="dish_name"><label for="filet">Filet z dorsza w delikatnej panierce</label></td>
+                  <td class="price"><label for="filet">12 zł</label></td>
+                </tr>
+              </table>
             </fieldset>
             <fieldset>
               <legend>Dodatki obiadowe do wyboru</legend>
-
+              <table class="order">
+                <tr><td><input type="checkbox" name="frytki" id="frytki"></td>
+                  <td class="dish_name"><label for="frytki">Frytki</label></td>
+                  <td class="price"><label for="frytki">5 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="ziemniaki" id="ziemniaki"></td>
+                  <td class="dish_name"><label for="ziemniaki">Ziemniaki</label></td>
+                  <td class="price"><label for="ziemniaki">5 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="opiekane" id="opiekane"></td>
+                  <td class="dish_name"><label for="opiekane">Ziemniaki opiekane</label></td>
+                  <td class="price"><label for="opiekane">6 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="cheb" id="cheb"></td>
+                  <td class="dish_name"><label for="cheb">Chleb (2 kromki)</label></td>
+                  <td class="price"><label for="cheb">1zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="surowki" id="surowki"></td>
+                  <td class="dish_name"><label for="surowki">Zestaw surówek</label></td>
+                  <td class="price"><label for="surowki">5 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="kapusta" id="kapusta"></td>
+                  <td class="dish_name"><label for="kapusta">Kapusta zasmażana </label></td>
+                  <td class="price"><label for="kapusta">5 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="sos" id="sos"></td>
+                  <td class="dish_name"><label for="sos">Ketchup / musztarda</label></td>
+                  <td class="price"><label for="sos">1 zł</label></td>
+                </tr>
+              </table>
             </fieldset>
             <fieldset>
               <legend>Zupy</legend>
-
+              <table class="order">
+                <tr><td><input type="checkbox" name="pomidorowa" id="pomidorowa"></td>
+                  <td class="dish_name"><label for="pomidorowa">Pomidorowa</label></td>
+                  <td class="price"><label for="pomidorowa">6zł </label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="zurek" id="zurek"></td>
+                  <td class="dish_name"><label for="zurek">Żurek staropolski</label></td>
+                  <td class="price"><label for="zurek">8 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="flaki" id="flaki"></td>
+                  <td class="dish_name"><label for="flaki">Flaki wołowe</label></td>
+                  <td class="price"><label for="flaki">9 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="ukrainski" id="ukrainski"></td>
+                  <td class="dish_name"><label for="ukrainski">Barszcz ukraiński</label></td>
+                  <td class="price"><label for="ukrainski">7 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="barszcz" id="barszcz"></td>
+                  <td class="dish_name"><label for="barszcz">Barszcz czerwony z uszkami</label></td>
+                  <td class="price"><label for="barszcz">7 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="grochowa" id="grochowa"></td>
+                  <td class="dish_name"><label for="grochowa">Grochowa</label></td>
+                  <td class="price"><label for="grochowa">7 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="rosol" id="rosol"></td>
+                  <td class="dish_name"><label for="rosol">Rosół domowy</label></td>
+                  <td class="price"><label for="rosol">5 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="ogorek" id="ogorek"></td>
+                  <td class="dish_name"><label for="ogorek">Ogórkowa</label></td>
+                  <td class="price"><label for="ogorek">7 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="szczawiowa" id="szczawiowa"></td>
+                  <td class="dish_name"><label for="szczawiowa">Szczawiowa</label></td>
+                  <td class="price"><label for="szczawiowa">6 zł</label></td>
+                </tr>
+              </table>
             </fieldset>
             <fieldset>
               <legend>Potrawy mączne</legend>
-
+              <table class="order">
+                <tr><td><input type="checkbox" name="pierogiMiesne" id="pierogiMiesne"></td>
+                  <td class="dish_name"><label for="pierogiMiesne">Pierogi z mięsem</label></td>
+                  <td class="price"><label for="pierogiMiesne">14 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="pierogiKapustne" id="pierogiKapustne"></td>
+                  <td class="dish_name"><label for="pierogiKapustne">Pierogi z kapustą</label></td>
+                  <td class="price"><label for="pierogiKapustne">14 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="ruskie" id="ruskie"></td>
+                  <td class="dish_name"><label for="ruskie">Pierogi ruskie</label></td>
+                  <td class="price"><label for="ruskie">14 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="pierogiSerowe" id="pierogiSerowe"></td>
+                  <td class="dish_name"><label for="pierogiSerowe">Pierogi z serem</label></td>
+                  <td class="price"><label for="pierogiSerowe">14 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="placki" id="placki"></td>
+                  <td class="dish_name"><label for="placki">Placki ziemniaczane ze śmietaną (3 szt.)</label></td>
+                  <td class="price"><label for="placki">9 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="nalesniki" id="nalesniki"></td>
+                  <td class="dish_name"><label for="nalesniki">Naleśniki z serem, bitą śmietaną i owocami (1 szt.)</label></td>
+                  <td class="price"><label for="nalesniki">4,50 zł</label></td>
+                </tr>
+                <tr><td><input type="checkbox" name="leniwe" id="leniwe"></td>
+                  <td class="dish_name"><label for="leniwe">Kluski leniwe na słodko</label></td>
+                  <td class="price"><label for="leniwe">10 zł</label></td>
+                </tr>
+              </table>
             </fieldset>
           </fieldset>
           <button type="button" name="next">Dalej</button>
@@ -62,20 +207,20 @@
           <fieldset>
             <legend>Dane osoby zamawiającej</legend>
             <label for="name">Imię: </label><input type="text" name="name" id="name">
-            <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surmane">
-            <label for="phone">Nr telefonu: </label><input type="phone" name="phone" id="phone">
+            <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname">
+            <label for="phone">Nr telefonu: </label><input type="tel" name="phone" id="phone">
           </fieldset>
           <fieldset>
             <legend>Czas realizacji</legend>
             <input type="radio" name="time" value="asap" id="asap"><label for="asap">Jak najszybciej</label>
-            <input type="radio" name="time" value="date" id="delivery"><label for="delivery">Wybieram przewidywany czas realizacji</label>
+            <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label>
             <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
             <label for="day">Data</label><input type="date" name="day" id="day">
           </fieldset>
           <fieldset class="visibility" id="address">
             <legend>Adres dostawy</legend>
-            <label for="street">Ulica: </label><input type="text" name="street">
-            <label for="number"></label><input type="text" name="number">
+            <label for="street">Ulica: </label><input type="text" name="street" id="street">
+            <label for="number">Numer domu: </label><input type="text" name="number" id="number">
           </fieldset>
           <button type="button" name="back">Zamawiam</button>
         </fieldset>
