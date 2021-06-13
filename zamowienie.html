@@ -1,247 +1,289 @@
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swojska Chata | najlepsze obiady domowe!</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/menu.css" type="text/css">
-    <link rel="stylesheet" href="css/form.css" type="text/css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Strona główna</a></li>
-          <li><a href="menu.html">Menu</a><ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swojska Chata | najlepsze obiady domowe!</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/menu.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="menu.html">Menu</a>
+          <ul>
             <li><a href="menu.html#zupy">Zupy</a></li>
             <li><a href="menu.html#glowne">Dania główne</a></li>
             <li><a href="menu.html#maczne">Potrawy mączne</a></li>
-          </ul></li>
-          <li><a href="zamowienie.html">Zamów online</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div id="banner">
-        <span>
-          <h1>Swojska Chata</h1>
-          <h2>Najlepsze obiady domowe w okolicy</h2>
-        </span>
-        <img src="images/banner.jpg" alt="baner">
-      </div>
-    </header>
-    <main>
-      <h2>Formularz zamówienia</h2>
-      <form action="mailto:mateusz.szewczyk@pollub.edu.pl" method="post">
-        <fieldset class="visibility" id="cart">
-          <fieldset>
-            <input type="radio" name="order_type" value="takeway" id="takeway"><label for="takeway">Na wynos</label>
-            <input type="radio" name="order_type" value="delivery" id="delivery"><label for="delivery">Dostawa na adres</label>
-          </fieldset>
-          <fieldset>
-            <legend>Menu</legend>
-            <fieldset>
-              <legend>Dania główne</legend>
-              <table class="order">
-                <tr><td><input type="checkbox" name="tradycyjny" id="tradycyjny"></td>
-                  <td class="dish_name"><label for="tradycyjny">Kotlet schabowy tradycyjny</label></td>
-                  <td class="price"><label for="tradycyjny">9 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="zapiekany" id="zapiekany"></td>
-                  <td class="dish_name"><label for="zapiekany">Kotlet schabowy zapiekany serem i pieczarką</label></td>
-                  <td class="price"><label for="zapiekany">11 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="piers" id="piers"></td>
-                  <td class="dish_name"><label for="piers">Pierś z kurczaka w panierce</label></td>
-                  <td class="price"><label for="piers">9 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="mielony" id="mielony"></td>
-                  <td class="dish_name"><label for="mielony">Kotlet mielony</label></td>
-                  <td class="price"><label for="mielony">9 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="zeberka" id="zeberka"></td>
-                  <td class="dish_name"><label for="zeberka">Żeberka wieprzowe</label></td>
-                  <td class="price"><label for="zeberka">13 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="bitka" id="bitka"></td>
-                  <td class="dish_name"><label for="bitka">Bitka wołowa</label></td>
-                  <td class="price"><label for="bitka">12 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="golabek" id="golabek"></td>
-                  <td class="dish_name"><label for="golabek">Gołąbek</label></td>
-                  <td class="price"><label for="golabek">11 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="udko" id="udko"></td>
-                  <td class="dish_name"><label for="udko">Udko pieczone</label></td>
-                  <td class="price"><label for="udko">9 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="devolaille" id="devolaille"></td>
-                  <td class="dish_name"><label for="devolaille">Kotlet de’volaille z serem i masłem</label></td>
-                  <td class="price"><label for="devolaille">11 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="gulasz" id="gulasz"></td>
-                  <td class="dish_name"><label for="gulasz">Gulasz wieprzowy warzywami</label></td>
-                  <td class="price"><label for="gulasz">11 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="wegierski" id="wegierski"></td>
-                  <td class="dish_name"><label for="wegierski">Placek po węgiersku</label></td>
-                  <td class="price"><label for="wegierski">20 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="filet" id="filet"></td>
-                  <td class="dish_name"><label for="filet">Filet z dorsza w delikatnej panierce</label></td>
-                  <td class="price"><label for="filet">12 zł</label></td>
-                </tr>
-              </table>
-            </fieldset>
-            <fieldset>
-              <legend>Dodatki obiadowe do wyboru</legend>
-              <table class="order">
-                <tr><td><input type="checkbox" name="frytki" id="frytki"></td>
-                  <td class="dish_name"><label for="frytki">Frytki</label></td>
-                  <td class="price"><label for="frytki">5 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="ziemniaki" id="ziemniaki"></td>
-                  <td class="dish_name"><label for="ziemniaki">Ziemniaki</label></td>
-                  <td class="price"><label for="ziemniaki">5 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="opiekane" id="opiekane"></td>
-                  <td class="dish_name"><label for="opiekane">Ziemniaki opiekane</label></td>
-                  <td class="price"><label for="opiekane">6 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="cheb" id="cheb"></td>
-                  <td class="dish_name"><label for="cheb">Chleb (2 kromki)</label></td>
-                  <td class="price"><label for="cheb">1zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="surowki" id="surowki"></td>
-                  <td class="dish_name"><label for="surowki">Zestaw surówek</label></td>
-                  <td class="price"><label for="surowki">5 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="kapusta" id="kapusta"></td>
-                  <td class="dish_name"><label for="kapusta">Kapusta zasmażana </label></td>
-                  <td class="price"><label for="kapusta">5 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="sos" id="sos"></td>
-                  <td class="dish_name"><label for="sos">Ketchup / musztarda</label></td>
-                  <td class="price"><label for="sos">1 zł</label></td>
-                </tr>
-              </table>
-            </fieldset>
-            <fieldset>
-              <legend>Zupy</legend>
-              <table class="order">
-                <tr><td><input type="checkbox" name="pomidorowa" id="pomidorowa"></td>
-                  <td class="dish_name"><label for="pomidorowa">Pomidorowa</label></td>
-                  <td class="price"><label for="pomidorowa">6zł </label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="zurek" id="zurek"></td>
-                  <td class="dish_name"><label for="zurek">Żurek staropolski</label></td>
-                  <td class="price"><label for="zurek">8 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="flaki" id="flaki"></td>
-                  <td class="dish_name"><label for="flaki">Flaki wołowe</label></td>
-                  <td class="price"><label for="flaki">9 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="ukrainski" id="ukrainski"></td>
-                  <td class="dish_name"><label for="ukrainski">Barszcz ukraiński</label></td>
-                  <td class="price"><label for="ukrainski">7 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="barszcz" id="barszcz"></td>
-                  <td class="dish_name"><label for="barszcz">Barszcz czerwony z uszkami</label></td>
-                  <td class="price"><label for="barszcz">7 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="grochowa" id="grochowa"></td>
-                  <td class="dish_name"><label for="grochowa">Grochowa</label></td>
-                  <td class="price"><label for="grochowa">7 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="rosol" id="rosol"></td>
-                  <td class="dish_name"><label for="rosol">Rosół domowy</label></td>
-                  <td class="price"><label for="rosol">5 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="ogorek" id="ogorek"></td>
-                  <td class="dish_name"><label for="ogorek">Ogórkowa</label></td>
-                  <td class="price"><label for="ogorek">7 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="szczawiowa" id="szczawiowa"></td>
-                  <td class="dish_name"><label for="szczawiowa">Szczawiowa</label></td>
-                  <td class="price"><label for="szczawiowa">6 zł</label></td>
-                </tr>
-              </table>
-            </fieldset>
-            <fieldset>
-              <legend>Potrawy mączne</legend>
-              <table class="order">
-                <tr><td><input type="checkbox" name="pierogiMiesne" id="pierogiMiesne"></td>
-                  <td class="dish_name"><label for="pierogiMiesne">Pierogi z mięsem</label></td>
-                  <td class="price"><label for="pierogiMiesne">14 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="pierogiKapustne" id="pierogiKapustne"></td>
-                  <td class="dish_name"><label for="pierogiKapustne">Pierogi z kapustą</label></td>
-                  <td class="price"><label for="pierogiKapustne">14 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="ruskie" id="ruskie"></td>
-                  <td class="dish_name"><label for="ruskie">Pierogi ruskie</label></td>
-                  <td class="price"><label for="ruskie">14 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="pierogiSerowe" id="pierogiSerowe"></td>
-                  <td class="dish_name"><label for="pierogiSerowe">Pierogi z serem</label></td>
-                  <td class="price"><label for="pierogiSerowe">14 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="placki" id="placki"></td>
-                  <td class="dish_name"><label for="placki">Placki ziemniaczane ze śmietaną (3 szt.)</label></td>
-                  <td class="price"><label for="placki">9 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="nalesniki" id="nalesniki"></td>
-                  <td class="dish_name"><label for="nalesniki">Naleśniki z serem, bitą śmietaną i owocami (1 szt.)</label></td>
-                  <td class="price"><label for="nalesniki">4,50 zł</label></td>
-                </tr>
-                <tr><td><input type="checkbox" name="leniwe" id="leniwe"></td>
-                  <td class="dish_name"><label for="leniwe">Kluski leniwe na słodko</label></td>
-                  <td class="price"><label for="leniwe">10 zł</label></td>
-                </tr>
-              </table>
-            </fieldset>
-          </fieldset>
-          <button type="button" name="next">Dalej</button>
+          </ul>
+        </li>
+        <li><a href="zamowienie.html">Zamów online</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div id="banner">
+      <span>
+        <h1>Swojska Chata</h1>
+        <h2>Najlepsze obiady domowe w okolicy</h2>
+      </span>
+      <img src="images/banner.jpg" alt="baner">
+    </div>
+  </header>
+  <main>
+    <h2>Formularz zamówienia</h2>
+    <form action="mailto:mateusz.szewczyk@pollub.edu.pl" method="post">
+      <fieldset class="visibility" id="cart">
+        <fieldset>
+          <input type="radio" name="order_type" value="takeway" id="takeway"><label for="takeway">Na wynos</label>
+          <input type="radio" name="order_type" value="delivery" id="delivery"><label for="delivery">Dostawa na adres</label>
         </fieldset>
-        <fieldset class="visibility" id="details">
-          <button type="button" name="back">Wstecz</button>
+        <fieldset>
+          <legend>Menu</legend>
           <fieldset>
-            <legend>Dane osoby zamawiającej</legend>
-            <label for="name">Imię: </label><input type="text" name="name" id="name">
-            <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname">
-            <label for="phone">Nr telefonu: </label><input type="tel" name="phone" id="phone">
+            <legend>Dania główne</legend>
+            <table class="order">
+              <input type="checkbox" name="tradycyjny" id="tradycyjny">
+              <div class="menuPosition">
+                <label for="tradycyjny"><div class="menuPosition_element dish_name">
+                Kotlet schabowy tradycyjny</div>
+                <div class="menuPosition_element price">9 zł</div></label>
+              </div>
+              <input type="checkbox" name="zapiekany" id="zapiekany">
+              <div class="menuPosition">
+                <label for="zapiekany"><div class="menuPosition_element dish_name">Kotlet schabowy zapiekany serem i pieczarką</label></div>
+                <div class="menuPosition_element price">11 zł</div></label>
+              </div>
+              <input type="checkbox" name="piers" id="piers">
+              <div class="menuPosition">
+                <label for="piers"><div class="menuPosition_element dish_name">Pierś z kurczaka w panierce</label></div>
+                <div class="menuPosition_element price">9 zł</div></label>
+              </div>
+              <input type="checkbox" name="mielony" id="mielony">
+              <div class="menuPosition">
+                <label for="mielony"><div class="menuPosition_element dish_name">Kotlet mielony</label></div>
+                <div class="menuPosition_element price">9 zł</div></label>
+              </div>
+              <input type="checkbox" name="zeberka" id="zeberka">
+              <div class="menuPosition">
+                <label for="zeberka"><div class="menuPosition_element dish_name">Żeberka wieprzowe</label></div>
+                <div class="menuPosition_element price">13 zł</div></label>
+              </div>
+              <input type="checkbox" name="bitka" id="bitka">
+              <div class="menuPosition">
+                <label for="bitka"><div class="menuPosition_element dish_name">Bitka wołowa</label></div>
+                <div class="menuPosition_element price">12 zł</div></label>
+              </div>
+              <input type="checkbox" name="golabek" id="golabek">
+              <div class="menuPosition">
+                <label for="golabek"><div class="menuPosition_element dish_name">Gołąbek</label></div>
+                <div class="menuPosition_element price">11 zł</div></label>
+              </div>
+              <input type="checkbox" name="udko" id="udko">
+              <div class="menuPosition">
+                <label for="udko"><div class="menuPosition_element dish_name">Udko pieczone</label></div>
+                <div class="menuPosition_element price">9 zł</div></label>
+              </div>
+              <input type="checkbox" name="devolaille" id="devolaille">
+              <div class="menuPosition">
+                <label for="devolaille"><div class="menuPosition_element dish_name">Kotlet de’volaille z serem i masłem</label></div>
+                <div class="menuPosition_element price">11 zł</div></label>
+              </div>
+              <input type="checkbox" name="gulasz" id="gulasz">
+              <div class="menuPosition">
+                <label for="gulasz"><div class="menuPosition_element dish_name">Gulasz wieprzowy warzywami</label></div>
+                <div class="menuPosition_element price">11 zł</div></label>
+              </div>
+              <input type="checkbox" name="wegierski" id="wegierski">
+              <div class="menuPosition">
+                <label for="wegierski"><div class="menuPosition_element dish_name">Placek po węgiersku</label></div>
+                <div class="menuPosition_element price">20 zł</div></label>
+              </div>
+              <input type="checkbox" name="filet" id="filet">
+              <div class="menuPosition">
+                <label for="filet"><div class="menuPosition_element dish_name">Filet z dorsza w delikatnej panierce</label></div>
+                <div class="menuPosition_element price">12 zł</div></label>
+              </div>
+            </table>
           </fieldset>
           <fieldset>
-            <legend>Czas realizacji</legend>
-            <input type="radio" name="time" value="asap" id="asap"><label for="asap">Jak najszybciej</label>
-            <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label>
-            <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
-            <label for="day">Data</label><input type="date" name="day" id="day">
+            <legend>Dodatki obiadowe do wyboru</legend>
+            <table class="order">
+              <input type="checkbox" name="frytki" id="frytki">
+              <div class="menuPosition">
+                <label for="frytki"><div class="menuPosition_element dish_name">Frytki</label></div>
+                <div class="menuPosition_element price">5 zł</div></label>
+              </div>
+              <input type="checkbox" name="ziemniaki" id="ziemniaki">
+              <div class="menuPosition">
+                <label for="ziemniaki"><div class="menuPosition_element dish_name">Ziemniaki</label></div>
+                <div class="menuPosition_element price">5 zł</div></label>
+              </div>
+              <input type="checkbox" name="opiekane" id="opiekane">
+              <div class="menuPosition">
+                <label for="opiekane"><div class="menuPosition_element dish_name">Ziemniaki opiekane</label></div>
+                <div class="menuPosition_element price">6 zł</div></label>
+              </div>
+              <input type="checkbox" name="cheb" id="cheb">
+              <div class="menuPosition">
+                <label for="cheb"><div class="menuPosition_element dish_name">Chleb (2 kromki)</label></div>
+                <div class="menuPosition_element price">1 zł</div></label>
+              </div>
+              <input type="checkbox" name="surowki" id="surowki">
+              <div class="menuPosition">
+                <label for="surowki"><div class="menuPosition_element dish_name">Zestaw surówek</label></div>
+                <div class="menuPosition_element price">5 zł</div></label>
+              </div>
+              <input type="checkbox" name="kapusta" id="kapusta">
+              <div class="menuPosition">
+                <label for="kapusta"><div class="menuPosition_element dish_name">Kapusta zasmażana </label></div>
+                <div class="menuPosition_element price">5 zł</div></label>
+              </div>
+              <input type="checkbox" name="sos" id="sos">
+              <div class="menuPosition">
+                <label for="sos"><div class="menuPosition_element dish_name">Ketchup / musztarda</label></div>
+                <div class="menuPosition_element price">1 zł</div></label>
+              </div>
+            </table>
           </fieldset>
-          <fieldset id="address">
-            <legend>Adres dostawy</legend>
-            <label for="street">Ulica: </label><input type="text" name="street" id="street">
-            <label for="number">Numer domu: </label><input type="text" name="number" id="number">
+          <fieldset>
+            <legend>Zupy</legend>
+            <table class="order">
+              <input type="checkbox" name="pomidorowa" id="pomidorowa">
+              <div class="menuPosition">
+                <label for="pomidorowa"><div class="menuPosition_element dish_name">Pomidorowa</label></div>
+                <div class="menuPosition_element price">6 zł</div></label>
+              </div>
+              <input type="checkbox" name="zurek" id="zurek">
+              <div class="menuPosition">
+                <label for="zurek"><div class="menuPosition_element dish_name">Żurek staropolski</label></div>
+                <div class="menuPosition_element price">8 zł</div></label>
+              </div>
+              <input type="checkbox" name="flaki" id="flaki">
+              <div class="menuPosition">
+                <label for="flaki"><div class="menuPosition_element dish_name">Flaki wołowe</label></div>
+                <div class="menuPosition_element price">9 zł</div></label>
+              </div>
+              <input type="checkbox" name="ukrainski" id="ukrainski">
+              <div class="menuPosition">
+                <label for="ukrainski"><div class="menuPosition_element dish_name">Barszcz ukraiński</label></div>
+                <div class="menuPosition_element price">7 zł</div></label>
+              </div>
+              <input type="checkbox" name="barszcz" id="barszcz">
+              <div class="menuPosition">
+                <label for="barszcz"><div class="menuPosition_element dish_name">Barszcz czerwony z uszkami</label></div>
+                <div class="menuPosition_element price">7 zł</div></label>
+              </div>
+              <input type="checkbox" name="grochowa" id="grochowa">
+              <div class="menuPosition">
+                <label for="grochowa"><div class="menuPosition_element dish_name">Grochowa</label></div>
+                <div class="menuPosition_element price">7 zł</div></label>
+              </div>
+              <input type="checkbox" name="rosol" id="rosol">
+              <div class="menuPosition">
+                <label for="rosol"><div class="menuPosition_element dish_name">Rosół domowy</label></div>
+                <div class="menuPosition_element price">5 zł</div></label>
+              </div>
+              <input type="checkbox" name="ogorek" id="ogorek">
+              <div class="menuPosition">
+                <label for="ogorek"><div class="menuPosition_element dish_name">Ogórkowa</label></div>
+                <div class="menuPosition_element price">7 zł</div></label>
+              </div>
+              <input type="checkbox" name="szczawiowa" id="szczawiowa">
+              <div class="menuPosition">
+                <label for="szczawiowa"><div class="menuPosition_element dish_name">Szczawiowa</label></div>
+                <div class="menuPosition_element price">6 zł</div></label>
+              </div>
+            </table>
           </fieldset>
-          <button type="button" name="back">Zamawiam</button>
+          <fieldset>
+            <legend>Potrawy mączne</legend>
+            <table class="order">
+              <input type="checkbox" name="pierogiMiesne" id="pierogiMiesne">
+              <div class="menuPosition">
+                <label for="pierogiMiesne"><div class="menuPosition_element dish_name">Pierogi z mięsem</label></div>
+                <div class="menuPosition_element price">14 zł</div></label>
+              </div>
+              <input type="checkbox" name="pierogiKapustne" id="pierogiKapustne">
+              <div class="menuPosition">
+                <label for="pierogiKapustne"><div class="menuPosition_element dish_name">Pierogi z kapustą</label></div>
+                <div class="menuPosition_element price">14 zł</div></label>
+              </div>
+              <input type="checkbox" name="ruskie" id="ruskie">
+              <div class="menuPosition">
+                <label for="ruskie"><div class="menuPosition_element dish_name">Pierogi ruskie</label></div>
+                <div class="menuPosition_element price">14 zł</div></label>
+              </div>
+              <input type="checkbox" name="pierogiSerowe" id="pierogiSerowe">
+              <div class="menuPosition">
+                <label for="pierogiSerowe"><div class="menuPosition_element dish_name">Pierogi z serem</label></div>
+                <div class="menuPosition_element price">14 zł</div></label>
+              </div>
+              <input type="checkbox" name="placki" id="placki">
+              <div class="menuPosition">
+                <label for="placki"><div class="menuPosition_element dish_name">Placki ziemniaczane ze śmietaną (3 szt.)</label></div>
+                <div class="menuPosition_element price">9 zł</div></label>
+              </div>
+              <input type="checkbox" name="nalesniki" id="nalesniki">
+              <div class="menuPosition">
+                <label for="nalesniki"><div class="menuPosition_element dish_name">Naleśniki z serem, bitą śmietaną i owocami (1 szt.)</label></div>
+                <div class="menuPosition_element price">4,50 zł</div></label>
+              </div>
+              <input type="checkbox" name="leniwe" id="leniwe">
+              <div class="menuPosition">
+                <label for="leniwe"><div class="menuPosition_element dish_name">Kluski leniwe na słodko</label></div>
+                <div class="menuPosition_element price">10 zł</div></label>
+              </div>
+            </table>
+          </fieldset>
         </fieldset>
-      </form>
-    </main>
-    <footer>
-      <section id="links">
-        <h4>Na skróty:</h4>
-        <a href="index.html">Strona główna</a><br>
-        <a href="menu.html">Menu</a><br>
-        <a href="zamowienie.html">Zamów online</a><br>
-      </section>
-      <section class="contact">
-        <h4>Dane kontaktowe:</h4>
-        Restauracja Swojska Chata<br>
-        <a href="mailto: example@example.pl"><span class="material-icons">email</span> example@example.pl</a><br>
-        <a href="tel:+48225553040"><span class="material-icons">call</span> (+48) 22 555 30 40</a><br>
-        <a href="https://www.google.com/maps/place/Kr%C3%B3tka+11,+24-100+Pu%C5%82awy/" target="_blank"><span class="material-icons">location_on</span> ul. Krótka 11 00-001 Miasto</a><br>
-      </section>
-      <span><hr>&copy; 2021 Mateusz Szewczyk</span>
-    </footer>
-  </body>
+        <button type="button" name="next">Dalej</button>
+      </fieldset>
+      <fieldset class="visibility" id="details">
+        <button type="button" name="back">Wstecz</button>
+        <fieldset>
+          <legend>Dane osoby zamawiającej</legend>
+          <label for="name">Imię: </label><input type="text" name="name" id="name">
+          <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname">
+          <label for="phone">Nr telefonu: </label><input type="tel" name="phone" id="phone">
+        </fieldset>
+        <fieldset>
+          <legend>Czas realizacji</legend>
+          <input type="radio" name="time" value="asap" id="asap"><label for="asap">Jak najszybciej</label>
+          <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label>
+          <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
+          <label for="day">Data</label><input type="date" name="day" id="day">
+        </fieldset>
+        <fieldset class="visibility" id="address">
+          <legend>Adres dostawy</legend>
+          <label for="street">Ulica: </label><input type="text" name="street" id="street">
+          <label for="number"></label><input type="text" name="number" id="number">
+        </fieldset>
+        <button type="button" name="back">Zamawiam</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <section id="links">
+      <h4>Na skróty:</h4>
+      <a href="index.html">Strona główna</a><br>
+      <a href="menu.html">Menu</a><br>
+      <a href="zamowienie.html">Zamów online</a><br>
+    </section>
+    <section class="contact">
+      <h4>Dane kontaktowe:</h4>
+      Restauracja Swojska Chata<br>
+      <a href="mailto: example@example.pl"><span class="material-icons">email</span> example@example.pl</a><br>
+      <a href="tel:+48225553040"><span class="material-icons">call</span> (+48) 22 555 30 40</a><br>
+      <a href="https://www.google.com/maps/place/Kr%C3%B3tka+11,+24-100+Pu%C5%82awy/" target="_blank"><span class="material-icons">location_on</span> ul. Krótka 11 00-001 Miasto</a><br>
+    </section>
+    <span>
+      <hr>&copy; 2021 Mateusz Szewczyk
+    </span>
+  </footer>
+</body>
+
 </html>
