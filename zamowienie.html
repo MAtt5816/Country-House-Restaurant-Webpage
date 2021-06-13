@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swojska Chata | najlepsze obiady domowe!</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="css/menu.css" type="text/css">
+  <link rel="stylesheet" href="css/form.css" type="text/css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
           <input type="radio" name="order_type" value="takeway" id="takeway"><label for="takeway">Na wynos</label>
           <input type="radio" name="order_type" value="delivery" id="delivery"><label for="delivery">Dostawa na adres</label>
         </fieldset>
-        <fieldset>
+        <fieldset id="menu_positions">
           <legend>Menu</legend>
           <fieldset>
             <legend>Dania główne</legend>
@@ -247,12 +247,12 @@
           <input type="radio" name="time" value="asap" id="asap"><label for="asap">Jak najszybciej</label>
           <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label>
           <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
-          <label for="day">Data</label><input type="date" name="day" id="day">
+          <label for="day">Data: </label><input type="date" name="day" id="day">
         </fieldset>
-        <fieldset class="visibility" id="address">
+        <fieldset id="address">
           <legend>Adres dostawy</legend>
           <label for="street">Ulica: </label><input type="text" name="street" id="street">
-          <label for="number"></label><input type="text" name="number" id="number">
+          <label for="number">Numer: </label><input type="text" name="number" id="number">
         </fieldset>
         <button type="button" name="back">Zamawiam</button>
       </fieldset>

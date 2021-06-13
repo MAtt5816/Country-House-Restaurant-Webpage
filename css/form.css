@@ -1,15 +1,94 @@
-td:first-child {
-  border: 0;
-  background-color: rgba(0,0,0,0);
-}
-
 label {
-  display: block;
+  display: inline;
   width: 100%;
   max-width: 100%;
 }
 
-fieldset {
+form, fieldset.visibility, #menu_positions {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
+}
+
+fieldset {
+  margin: 0;
+}
+
+fieldset.visibility, .visibility>fieldset {
+  border: 0;
+  width: 90%;
+}
+
+#menu_positions fieldset {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  border: 0;
+  border-bottom: 1px solid black;
+  border-top: 0;
+  width: 90%;
+}
+
+#menu_positions .menuPosition {
+  background-color: #FDE3AC;
+  border: 2px solid #3D2B05;
+  border-radius: 15px;
+  flex: 1;
+  height: auto;
+  vertical-align: middle;
+}
+
+.menuPosition label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#menu_positions span, label {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 120%;
+}
+
+.dish_name {
+  flex: 80%;
+}
+
+.price {
+  border-left: 1px solid #3D2B05;
+  flex: 20%;
+  line-height: 75px;
+  white-space: nowrap;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+h2 {
+  font-size: 200%;
+}
+
+#menu_positions>legend {
+  margin: 20px auto;
+  color: #3D2B05;
+  font-weight: bold;
+  font-family: 'Courgette', cursive;
+  font-size: 200%;
+}
+
+#menu_positions fieldset legend {
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  font-weight: bold;
 }
