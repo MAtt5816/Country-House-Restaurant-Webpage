@@ -27,11 +27,21 @@ $(document).ready(function(){
       code = span_quantity+code;
     }
 
-
     div.css(style);
-
-
-
     div.children().first().html(code);
+  });
+
+
+  $('form').submit(function(){
+    var is_checked = false;
+    $('input[type="checkbox"]').each(function(index, elem){
+      if(elem.checked) {
+        is_checked = true;
+      }
+    });
+    if(is_checked == false) {
+      alert("Nie wybrano żadnej potrawy!");
+      return false
+    };
   });
 });
