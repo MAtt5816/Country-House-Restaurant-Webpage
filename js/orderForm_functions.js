@@ -31,17 +31,50 @@ $(document).ready(function(){
     div.children().first().html(code);
   });
 
-
   $('form').submit(function(){
+    var dishes = [];
     var is_checked = false;
+    let i = 0;
     $('input[type="checkbox"]').each(function(index, elem){
       if(elem.checked) {
         is_checked = true;
+        dishes[i] = {};
+        dishes[i].id = $(elem).prop("id");
+        dishes[i].quantity = $('div#div_'+dishes[i].id+' .quantity>input').val();
+        dishes[i].price = $('div#div_'+dishes[i].id+' .price').text();
+        i++;
       }
     });
     if(is_checked == false) {
       alert("Nie wybrano żadnej potrawy!");
-      return false
+      return false;
     };
+
+    var details = {};
+    details.name = $("#name").val();
+    details.surname = $("#surname").val();
+    details.phone = $("#phone").val();
+    details.street = $("#street").val();
+    details.number = $("#number").val();
+    details.comments = $("textarea").val();
+    if($("#takeway").prop("checked")){
+      details.method = "takeway";
+    }
+    else{
+      details.method = "delivery";
+    }
+    if($("#asap").prop("checked")){
+      details.time = "asap";
+    }
+    else{
+      details.time = "date";
+      details.hour = $("#hour").val();
+      details.day = $("#day").val();
+    }
+    var list = JSON.parse(localStorage.getItem('list'));
+    list=[];
+    list.push(details);
+    list.push(dishes);
+    localStorage.setItem('list', JSON.stringify(list));
   });
 });
