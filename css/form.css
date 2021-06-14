@@ -24,7 +24,7 @@ fieldset.visibility, .visibility>fieldset {
 
 #menu_positions fieldset {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   border: 0;
   border-bottom: 1px solid black;
@@ -91,7 +91,15 @@ h2 {
 #menu_positions fieldset legend {
   margin: 0;
   padding: 0;
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
   grid-row: 1 / 2;
   font-weight: bold;
+}
+
+.quantity {
+  flex: 15%;
+}
+
+.quantity input {
+  width: 90%;
 }
