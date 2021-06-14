@@ -40,7 +40,7 @@
     <form action="mailto:mateusz.szewczyk@pollub.edu.pl" method="post">
       <fieldset class="visibility" id="cart">
         <fieldset>
-          <input type="radio" name="order_type" value="takeway" id="takeway"><label for="takeway">Na wynos</label>
+          <input type="radio" name="order_type" value="takeway" id="takeway" required><label for="takeway">Na wynos</label>
           <input type="radio" name="order_type" value="delivery" id="delivery"><label for="delivery">Dostawa na adres</label>
         </fieldset>
         <fieldset id="menu_positions">
@@ -240,23 +240,24 @@
         <button type="button" name="back">Wstecz</button>
         <fieldset>
           <legend>Dane osoby zamawiającej</legend>
-          <label for="name">Imię: </label><input type="text" name="name" id="name">
-          <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname">
-          <label for="phone">Nr telefonu: </label><input type="tel" name="phone" id="phone">
+          <label for="name">Imię: </label><input type="text" name="name" id="name" pattern="^[A-Za-z](\D)+" title="Podaj co najmniej dwie litery. Nie uzywaj cyfr." required>
+          <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname" pattern="^[A-Za-z](\D)+" title="Podaj co najmniej dwie litery. Nie uzywaj cyfr." required>
+          <label for="phone">Nr telefonu: </label><input type="tel" name="phone" id="phone" pattern="^\d{9}" title="Podaj dziewięć cyfr bez spacji i innych znaków." required>
         </fieldset>
         <fieldset>
           <legend>Czas realizacji</legend>
-          <input type="radio" name="time" value="asap" id="asap"><label for="asap">Jak najszybciej</label>
+          <input type="radio" name="time" value="asap" id="asap" required><label for="asap">Jak najszybciej</label>
           <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label>
           <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
           <label for="day">Data: </label><input type="date" name="day" id="day">
         </fieldset>
         <fieldset id="address">
           <legend>Adres dostawy</legend>
-          <label for="street">Ulica: </label><input type="text" name="street" id="street">
-          <label for="number">Numer: </label><input type="text" name="number" id="number">
+          <label for="street">Ulica: </label><input type="text" name="street" id="street" minlength="2" title="Podaj co najmniej dwa znaki." required>
+          <label for="number">Numer: </label><input type="text" name="number" id="number" required>
         </fieldset>
-        <button type="button" name="back">Zamawiam</button>
+        <textarea name="uwagi" rows="3" cols="80" placeholder="Uwagi do zamówienia"></textarea>
+        <input type="submit" value="Zamawiam">
       </fieldset>
     </form>
   </main>
