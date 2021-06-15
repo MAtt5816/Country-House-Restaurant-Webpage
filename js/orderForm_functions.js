@@ -77,4 +77,49 @@ $(document).ready(function(){
     list.push(dishes);
     localStorage.setItem('list', JSON.stringify(list));
   });
+
+
+  $("#load").click(function(){
+    var list = JSON.parse(localStorage.getItem('list'));
+    if(list == null) alert("Brak ostatnich zamówień w pamięci");
+    else {
+      let item = list[0];
+      let ordered = list[1];
+      $("#name").val(item.name);
+      $("#surname").val(item.surname);
+      $("#phone").val(item.phone);
+      $("#street").val(item.street);
+      $("#number").val(item.number);
+      $("textarea").val(item.comments);
+      if(item.method == "takeway"){
+        $("#takeway").prop("checked", true);
+      }
+      else{
+        $("#delivery").prop("checked", true);
+      }
+      if(item.time == "asap"){
+        $("#asap").prop("checked", true);
+      }
+      else {
+        $("#date").prop("checked", true);
+        $("#hour").val(details.hour);
+        $("#day").val(details.day);
+      }
+      for(let j=0;j<ordered.length;j++){
+        let temp_id = ordered[j].id;
+        $('#'+temp_id).click();
+        $('div#div_'+temp_id+' .quantity>input').val(ordered[j].quantity);
+      }
+      $("#mode").val("edited");
+      $('input[type="submit"]').val('Nadpisz zamówienie');
+      if(!($('#reset').length)) $("fieldset#details").append('<button type="button" name="reset" id="reset">Wyczyść pamięć</button>');
+    }
+  });
+  $("#details").on('click', '#reset', function(){
+    var r = confirm("Jesteś pewien? Stracisz możliwość edycji oraz podglądu aktualnie załadowanego zamówienia.");
+    if(r == true){
+      localStorage.clear();
+      location.reload();
+    }
+  });
 });

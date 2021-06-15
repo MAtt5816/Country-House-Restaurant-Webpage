@@ -36,8 +36,10 @@
     </div>
   </header>
   <main>
+    <button type="button" name="load" id="load">Załaduj poprzednie zamówienie</button>
     <h2>Formularz zamówienia</h2>
     <form action="mailto:mateusz.szewczyk@pollub.edu.pl" method="post">
+      <input type="hidden" name="mode" id="mode" value="new">
       <fieldset class="visibility" id="cart">
         <fieldset>
           <input type="radio" name="order_type" value="takeway" id="takeway" required><label for="takeway">Na wynos</label>
@@ -234,10 +236,8 @@
               </div>
           </fieldset>
         </fieldset>
-        <button type="button" name="next">Dalej</button>
       </fieldset>
       <fieldset class="visibility" id="details">
-        <button type="button" name="back">Wstecz</button>
         <fieldset>
           <legend>Dane osoby zamawiającej</legend>
           <label for="name">Imię: </label><input type="text" name="name" id="name" pattern="^[A-Za-z](\D)+" title="Podaj co najmniej dwie litery. Nie uzywaj cyfr." required>
