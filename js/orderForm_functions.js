@@ -31,6 +31,30 @@ $(document).ready(function(){
     div.children().first().html(code);
   });
 
+
+  $('#delivery, #takeway').click(function(){
+    if($('#delivery').prop('checked')){
+      $('#street, #number').prop('required', true);
+      $('#address').show();
+     }
+    else {
+      $('#street, #number').prop('required', false);
+      $('#address').hide();
+  }
+  });
+
+  $('#asap, #date').click(function(){
+    if($('#date').prop('checked')) {
+      $('#day, #hour').prop('required', true);
+      $('#data_time').show();
+  }
+    else {
+      $('#day, #hour').prop('required', false);
+      $('#data_time').hide();
+    }
+  });
+
+
   $('form').submit(function(){
     var dishes = [];
     var is_checked = false;

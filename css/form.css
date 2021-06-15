@@ -103,3 +103,7 @@ h2 {
 .quantity input {
   width: 90%;
 }
+
+#address, #data_time {
+  display: none;
+}

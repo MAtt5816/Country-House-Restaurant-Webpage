@@ -247,14 +247,16 @@
         <fieldset>
           <legend>Czas realizacji</legend>
           <input type="radio" name="time" value="asap" id="asap" required><label for="asap">Jak najszybciej</label>
-          <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label>
-          <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
-          <label for="day">Data: </label><input type="date" name="day" id="day">
+          <input type="radio" name="time" value="date" id="date"><label for="date">Wybieram przewidywany czas realizacji</label><br>
+          <span id="data_time">
+            <label for="hour">Godzina: </label><input type="time" name="hour" id="hour">
+            <label for="day">Data: </label><input type="date" name="day" id="day">
+          </span>
         </fieldset>
         <fieldset id="address">
           <legend>Adres dostawy</legend>
-          <label for="street">Ulica: </label><input type="text" name="street" id="street" minlength="2" title="Podaj co najmniej dwa znaki." required>
-          <label for="number">Numer: </label><input type="text" name="number" id="number" required>
+          <label for="street">Ulica: </label><input type="text" name="street" id="street" minlength="2" title="Podaj co najmniej dwa znaki.">
+          <label for="number">Numer: </label><input type="text" name="number" id="number">
         </fieldset>
         <textarea name="uwagi" rows="3" cols="80" placeholder="Uwagi do zamówienia"></textarea>
         <input type="submit" value="Zamawiam">
