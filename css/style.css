@@ -17,6 +17,10 @@ h1, h2, h3, h4, #welcome {
   text-align: center;
 }
 
+header{
+  max-height: 100vh;
+}
+
 header h1 {
   color: #FDB515;
   font-family: 'MedievalSharp', cursive;
@@ -39,8 +43,15 @@ header h2 {
 
 #banner img{
   width: 100%;
+  height: 45vh;
   filter: blur(1px) brightness(80%);
   display: block;
+  object-fit: cover;
+}
+
+img.at_index {
+  min-height: 100vh;
+  object-fit: cover;
 }
 
 #banner span {
@@ -48,7 +59,6 @@ header h2 {
   top: 50%; left: 0; right: 0;
   transform: translate(0 ,-50%);
   z-index: 2;
-
 }
 
 p {
@@ -60,8 +70,13 @@ nav {
   flex: 100%;
   background-color: #3D2B05;
   text-align: left;
-  overflow: hidden;
   font-family: calibri, tahoma;
+}
+
+nav.at_index {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 nav a {
@@ -70,7 +85,7 @@ nav a {
 
 nav>ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: row wrap;
 }
 
 nav>ul li {
@@ -175,9 +190,6 @@ footer {
   background-color: #3D2B05;
   font-weight: lighter;
   display: grid;
-  grid-template-areas:
-      '. links contact .'
-      ' . copy copy .';
   grid-gap: minmax(0, 1fr);
   justify-content: space-around;
   align-items: normal;
@@ -226,6 +238,12 @@ hr {
   font-style: italic;
   font-family: 'Courgette', cursive;
   font-size: 190%;
+  color: #3D2B05;
+}
+
+main>.contact a {
+  text-decoration: none;
+  color: #3D2B05;
 }
 
 #map {
@@ -236,4 +254,45 @@ hr {
   width: 100vw;
   max-width: 100%;
   height: 300px;
+}
+
+@media screen and (min-width: 655px) {
+  footer{
+    grid-template-areas:
+      '. links contact .'
+      ' . copy copy .';
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  footer {
+    grid-template-areas:
+      '. links .'
+      '. contact .'
+      ' . copy .';
+    text-align: center;
+  }
+  footer h4{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  #banner h2 {
+    display: none;
+  }
+  h2.at_index {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #banner h1{
+    font-size: 400%;
+  }
+  nav>ul{
+    display: grid;
+    grid-template-areas:
+      '. .'
+      '. .';
+  }
 }

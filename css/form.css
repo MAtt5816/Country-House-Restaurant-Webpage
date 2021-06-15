@@ -22,12 +22,15 @@ fieldset.visibility, .visibility>fieldset {
   width: 90%;
 }
 
+#menu_positions{
+  border-bottom: 1px solid #3D2B05;
+}
+
 #menu_positions fieldset {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   border: 0;
-  border-bottom: 1px solid black;
   border-top: 0;
   width: 90%;
 }
@@ -94,6 +97,33 @@ h2 {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   font-weight: bold;
+}
+
+#details legend {
+  font-weight: bold;
+}
+
+fieldset>input, fieldset>textarea {
+  background-color: #FDE3AC;
+  border: 0;
+  border-bottom: 1px solid #3D2B05;
+}
+
+fieldset>input {
+  background-color: #FDCB60;
+}
+
+button, input[type="submit"] {
+  margin: 15px;
+  padding: 10px;
+  background-color: #FDB515;
+  border: 1px solid #3D2B05 !important;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #3D2B05;
+}
+
+button:active, input[type="submit"]:active {
+  box-shadow: none;
 }
 
 .quantity {
