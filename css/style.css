@@ -326,3 +326,51 @@ main>.contact a {
     font-size: 300%;
   }
 }
+
+/* galeria */
+#gallery{
+  width: 85%;
+  display: grid;
+  grid-template-areas:
+    '. . .'
+    '. . .';
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-gap: 50px;
+  margin-top: 20px;
+}
+
+#gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px #3D2B05;
+}
+
+@media screen and (max-width: 1184px){
+  #gallery{
+    grid-template-areas:
+      '. .'
+      '. .';
+  }
+}
+
+@media screen and (max-width: 770px){
+  #gallery img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 545px){
+  #gallery{
+  grid-template-areas: none;
+  grid-gap: 10px;
+  }
+
+  #gallery img {
+    width: 150px;
+    height: 150px;
+}
