@@ -256,6 +256,42 @@ main>.contact a {
   height: 300px;
 }
 
+
+
+/* pasek powiadomien */
+#annonce_bar{
+  width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  background-color: #E3A112;
+  font-weight: bold;
+  font-size: 120%;
+  //display: none;
+}
+
+#annonce_bar p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll 30s linear infinite;
+  white-space:nowrap;
+}
+@keyframes scroll {
+ 0%   {
+ transform: translateX(100%);
+ }
+ 100% {
+ transform: translateX(-100%);
+ }
+}
+
+
+
+
+
 @media screen and (min-width: 655px) {
   footer{
     grid-template-areas:
@@ -282,6 +318,10 @@ main>.contact a {
   }
   h2.at_index {
     display: block !important;
+  }
+
+  #annonce_bar p {
+    animation: scroll 15s linear infinite;
   }
 }
 
@@ -373,4 +413,5 @@ main>.contact a {
   #gallery img {
     width: 150px;
     height: 150px;
+  }
 }
