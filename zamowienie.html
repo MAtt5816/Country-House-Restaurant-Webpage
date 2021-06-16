@@ -256,7 +256,12 @@
         <fieldset id="address">
           <legend>Adres dostawy</legend>
           <label for="street">Ulica: </label><input type="text" name="street" id="street" minlength="2" title="Podaj co najmniej dwa znaki.">
-          <label for="number">Numer: </label><input type="text" name="number" id="number">
+          <label for="number">Numer: </label><input type="text" name="number" id="number"><br><br>
+          <label for="payment">Sposób płatności  kurierowi: </label><select id="payment" name="payment">
+            <option value="cash">Gotowka</option>
+            <option value="card">Karta</option>
+            <option value="voucher">Bon rabatowy</option>
+          </select>
         </fieldset>
         <textarea name="uwagi" rows="3" cols="80" placeholder="Uwagi do zamówienia"></textarea>
         <input type="submit" value="Zamawiam">

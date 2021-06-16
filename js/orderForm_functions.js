@@ -80,6 +80,7 @@ $(document).ready(function(){
     details.phone = $("#phone").val();
     details.street = $("#street").val();
     details.number = $("#number").val();
+    details.payment = $("#payment option:selected").val();
     details.comments = $("textarea").val();
     if($("#takeway").prop("checked")){
       details.method = "takeway";
@@ -116,19 +117,21 @@ $(document).ready(function(){
       $("#number").val(item.number);
       $("textarea").val(item.comments);
       if(item.method == "takeway"){
-        $("#takeway").prop("checked", true);
+        $("#takeway").click();
       }
       else{
-        $("#delivery").prop("checked", true);
+        $("#delivery").click();
       }
       if(item.time == "asap"){
-        $("#asap").prop("checked", true);
+        $("#asap").click();
       }
       else {
-        $("#date").prop("checked", true);
-        $("#hour").val(details.hour);
-        $("#day").val(details.day);
+        $("#date").click();
+        $("#hour").val(item.hour);
+        $("#day").val(item.day);
       }
+      $('#payment option[value="'+item.payment+'"]').prop("selected", true);
+
       for(let j=0;j<ordered.length;j++){
         let temp_id = ordered[j].id;
         $('#'+temp_id).click();
