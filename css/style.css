@@ -285,6 +285,21 @@ main>.contact a {
   }
 }
 
+@media screen and (max-width: 654px) and (orientation: landscape) {
+  #banner h1 {
+    font-size: 300%;
+  }
+}
+
+@media screen and (max-height: 470px) and (orientation: landscape) {
+  #banner h2 {
+    display: none !important;
+  }
+  #banner h1{
+    font-size: 300%;
+  }
+}
+
 @media screen and (max-width: 390px) {
   #banner h1{
     font-size: 400%;
@@ -294,5 +309,20 @@ main>.contact a {
     grid-template-areas:
       '. .'
       '. .';
+  }
+  #welcome {
+    font-size: 200%;
+  }
+  nav>ul li:hover ul {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 390px) and (orientation: landscape) {
+  h2.at_index {
+    display: none !important;
+  }
+  #banner h1{
+    font-size: 300%;
   }
 }
