@@ -54,7 +54,7 @@ img.at_index {
   object-fit: cover;
 }
 
-#banner span {
+#banner>div {
   position: absolute;
   top: 50%; left: 0; right: 0;
   transform: translate(0 ,-50%);
@@ -85,7 +85,7 @@ nav a {
 
 nav>ul {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
 }
 
 nav>ul li {
@@ -190,7 +190,6 @@ footer {
   background-color: #3D2B05;
   font-weight: lighter;
   display: grid;
-  grid-gap: minmax(0, 1fr);
   justify-content: space-around;
   align-items: normal;
   align-content: center;
@@ -216,7 +215,7 @@ footer a {
   flex: auto;
 }
 
-footer span {
+footer>div {
   margin: 15px auto;
   text-align: center;
   grid-area: copy;
@@ -266,7 +265,6 @@ main>.contact a {
   background-color: #E3A112;
   font-weight: bold;
   font-size: 120%;
-  //display: none;
 }
 
 #annonce_bar p {
