@@ -1,4 +1,4 @@
-# A COUNTRY HOUSE WEBPAGE
+# A COUNTRY HOUSE RESTAURANT WEBPAGE
 Website project of a small restaurant with the functionality of ordering take-out or with delivery indicated to the address
 
 ## Table of Content
