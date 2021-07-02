@@ -22,6 +22,7 @@ Extract all files in the root directory of the web server or open on your own co
 ## License
 You can use this repository to learn how to write web pages and preview the code.
 It is forbidden to  commercial use this repository in whole or in part, or to publish it on your own websites.
+**If you want to use this repository or its elements in your own webpage, contact me please.**
 
 ## Inspiration
 The project was created to pass the laboratory part of the Fundamentals of Web Applications course at the Faculty of Computer Science at Lublin University of Technology.
