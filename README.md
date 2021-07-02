@@ -5,6 +5,7 @@ Website project of a small restaurant with the functionality of ordering take-ou
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [License](#license)
 * [Inspiration](#inspiration)
 
 ## General info
@@ -17,6 +18,10 @@ The project of the website of a small restaurant includes a menu card and a form
 
 ## Setup
 Extract all files in the root directory of the web server or open on your own computer by opening the HTML file in a browser.
+
+## License
+You can use this repository to learn how to write web pages and preview the code.
+It is forbidden to  commercial use this repository in whole or in part, or to publish it on your own websites.
 
 ## Inspiration
 The project was created to pass the laboratory part of the Fundamentals of Web Applications course at the Faculty of Computer Science at Lublin University of Technology.
